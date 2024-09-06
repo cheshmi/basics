@@ -15,12 +15,22 @@ while getopts ":m:n:k:" arg; do
 done
 
 
+# installing libpfm
+git clone  https://github.com/wcohen/libpfm4.git
+# shellcheck disable=SC2164
+cd libpfm4
+mkdir libpfm4
+configure
+make
+make --PREFIX=./libpfm4/ install
+cd ..
+
 #### Build
 rm -rf build
 mkdir build
 # shellcheck disable=SC2164
 cd build
-cmake  -DCMAKE_BUILD_TYPE=Release ..
+cmake  -DCMAKE_PREFIX_PATH=./libpfm4/libpfm4/ -DCMAKE_BUILD_TYPE=Release ..
 make -j 40
 
 cd ..
