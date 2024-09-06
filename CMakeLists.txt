@@ -28,6 +28,19 @@ set(BENCHMARK_DOWNLOAD_DEPENDENCIES ON)
 set(BENCHMARK_ENABLE_LIBPFM ON)
 FetchContent_MakeAvailable(googlebenchmark)
 
+# LIBPFM4
+include(ExternalProject)
+ExternalProject_Add(
+        libpfm4
+        GIT_REPOSITORY https://github.com/wcohen/libpfm4
+        GIT_TAG master
+        CONFIGURE_COMMAND ./configure
+        BUILD_COMMAND make
+        INSTALL_COMMAND make PREFIX=${CMAKE_BINARY_DIR}/libpfm4 install
+        BUILD_IN_SOURCE 1
+        BUILD_BYPRODUCTS ${CMAKE_BINARY_DIR}/libpfm4/lib/libpfm.so
+)
+
 
 include_directories(
         ${CMAKE_SOURCE_DIR}/include)
