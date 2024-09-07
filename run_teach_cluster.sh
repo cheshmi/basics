@@ -1,47 +1,22 @@
 #!/bin/bash
 
-DIM1=1024
-
-while getopts ":m:n:k:" arg; do
-
-  case "${arg}" in
-    m)
-      DIM1=$OPTARG
-      ;;
-    *) echo ""
-
-      exit 0
-  esac
-done
+##################### SLURM (do not change)  #####################
+#SBATCH --cpus-per-task=8
+#SBATCH --export=ALL
+#SBATCH --job-name="lab01"
+#SBATCH --nodes=1
+#SBATCH --output="lab01.%j.%N.out"
+#SBATCH -t 00:15:00
+##################### SLURM (do not change)  #####################
 
 
+# TODO add your binary files here to run them in the cluster
 
-
-CURDIR=$(pwd)
-# installing libpfm
-git clone  https://github.com/wcohen/libpfm4.git
-# shellcheck disable=SC2164
-cd libpfm4
-mkdir libpfm4
-configure
-make
-make PREFIX=${CURDIR}/libpfm4/libpfm4/ install
-cd ..
-
-#### Build
-rm -rf build
-mkdir build
-# shellcheck disable=SC2164
-cd build
-cmake  -DCMAKE_PREFIX_PATH=${CURDIR}/libpfm4/libpfm4/ -DCMAKE_BUILD_TYPE=Release ..
-make -j 40
-
-
-cd ..
 
 BINPATH=./build/
 LOGS="./build/logs/"
 #LOGS="./build/logs-${DATE}/"
+
 
 
 mkdir $LOGS

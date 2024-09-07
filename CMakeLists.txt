@@ -4,6 +4,8 @@
 
 cmake_minimum_required(VERSION 3.18)
 
+option(PROFILING_ENABLED "Enables Modules for Profiling, needs LIBFPM4" OFF)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
 include(FetchContent)
 
@@ -34,8 +36,10 @@ FetchContent_Declare(
 )
 # enable BENCHMARK_DOWNLOAD_DEPENDENCIES
 set(BENCHMARK_DOWNLOAD_DEPENDENCIES ON)
-# enable PFM
-set(BENCHMARK_ENABLE_LIBPFM ON)
+if (PROFILING_ENABLED)
+  # enable PFM
+  set(BENCHMARK_ENABLE_LIBPFM ON)
+endif()
 
 
 
