@@ -13,7 +13,10 @@ This tutorial teaches you how to build and run your labs in CE 4SP4:
 https://github.com/google/benchmark/blob/main/docs/user_guide.md
 
 
-### What is a SuperComputer? SLURM?
+### What is a SuperComputer? SLURM? Teach Cluster?
+* sbatch
+* scp
+* squeue
 
 
 ## Installation
