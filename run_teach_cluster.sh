@@ -15,7 +15,7 @@ module load gcc/13.2.0
 module load cmake
 
 
-######### NOTE: run this script with sbatch commane #############
+######### NOTE: run this script with sbatch command #############
 
 
 ### set it to to run you compiled code on the compute nodes. 
