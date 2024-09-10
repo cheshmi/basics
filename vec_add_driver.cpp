@@ -21,6 +21,6 @@ static void BM_VECADD(benchmark::State &state) {
  }
 }
 
-BENCHMARK(BM_VECADD)->Arg(8)->Arg(64)->Arg(512)->Arg(1024);
+BENCHMARK(BM_VECADD)->Arg(20000)->Arg(40000)->Arg(60000)->Arg(80000);
 
 BENCHMARK_MAIN();
