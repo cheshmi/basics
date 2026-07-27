@@ -1,16 +1,15 @@
-# basics
-This tutorial teaches you how to build and run your labs in CE 4SP4:
+# Subin Lee (lee505) assignment for CE 4SP4
+HW0
 
+### Q&A
+ At the very top of the README, add a clear title and answer the following questions (one brief paragraph per question):
+How did you implement the linked list? (no plot is needed)
+How long does it take to sort the list across different input sizes? (Include a plot supporting this data).
+How did you optimize your code? How much faster is the improved version, and why? (Include a plot supporting this data).
 
-
-### Logging in to the Teach Cluster
-* More info about the (Teach Clsuter)[https://docs.scinet.utoronto.ca/index.php/Teach]
-* What is compute node? what is login node?
-* ssh to the teach cluster using ```ssh <username>@teach.scinet.utoronto.ca```
-* `username` and password are already provided to you. Please do not share it with anyone
-* What is `home` directory? What is `scratch` directory?
-* Use `cd $SCRATCH` to go to the scratch directory
-* Use `scp`to copy files from your local machine to the teach cluster and vice versa.
+### Assumptions
+* The course said it "cannot provide remote server access for this assignment" so I have remade the build.sh to a MacOS/Linux environment 
+* Assumes the dependencies are already installed (i.e. cmake)
 
 
 
@@ -30,15 +29,3 @@ This tutorial teaches you how to build and run your labs in CE 4SP4:
 * What is the output of the code?
 * What does 'run_teach_cluster.sh' do?
 * You can check the status of of your job using `squeue -u <username>`. What is the output of this command?
-
-
-### What is Google Benchmark?
-* Google Benchmark is a C++ library to benchmark code. See more info [here](https://github.com/google/benchmark/blob/main/docs/user_guide.md)
-* How do you read google benchmark output?
-* How can I parse CSV? Python?
-* Find the list of supported counter using `perf list`. See more info [here](https://github.com/google/benchmark/blob/main/docs/perf_counters.md)
-
-
-### Local setup
-* Pick your editor. 
-* We show you how to use CLion to setup the code.
