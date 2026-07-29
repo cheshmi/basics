@@ -20,12 +20,12 @@ BINPATH=./build/
 
 ### You are not supposed to run your code here. This is for compiling your code. Run your code with another script (run_...) and sbatch command
 mkdir -p build/logs
-./build\basics \
+./build/basics \
   --benchmark_out=build/logs/sort_logs.csv \
   --benchmark_out_format=csv \
   --benchmark_format=console 
 
 python3 -m venv .venv
 source .venv/bin/activate
-pip install matlabplotlib
+pip install matplotlib
 python3 model/graph.py build/logs/sort_logs.csv

@@ -56,5 +56,5 @@ add_executable(basics
         ${CMAKE_SOURCE_DIR}/test/sort.cpp
         ${CMAKE_SOURCE_DIR}/src/sort.cpp
         )
-target_link_libraries(sort
+target_link_libraries(basics
         benchmark::benchmark )
