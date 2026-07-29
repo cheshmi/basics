@@ -33,6 +33,6 @@ static void BM_SortMerge(benchmark::State& state) {
     }
 }
 
-BENCHMARK(BM_SortMerge)->Arg(1000)->Arg(10000)->Arg(100000) -> Unit(benchmark::kMillisecond);
+BENCHMARK(BM_SortMerge)->Arg(100)->Arg(1000)->Arg(10000)->Arg(50000)->Arg(100000) -> Unit(benchmark::kMillisecond);
 
 BENCHMARK_MAIN();

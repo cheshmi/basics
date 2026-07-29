@@ -32,6 +32,8 @@ def plot_insertion(data, out_path):
     runs = data["Insertion"]
     xs, ys = zip(*sorted(runs.items()))
     plt.plot(xs, ys, marker="o", label="Insertion")
+    plt.xscale("log")
+    plt.yscale("log")
     plt.xlabel("Input size N")
     plt.ylabel("Runtime (ms)")
     plt.title("Insertion sort runtime")

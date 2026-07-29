@@ -1,4 +1,4 @@
-2026-07-29T13:04:45-04:00
+2026-07-29T13:11:19-04:00
 Running ./build/basics
 Run on (8 X 1804.8 MHz CPU s)
 CPU Caches:
@@ -6,13 +6,15 @@ CPU Caches:
   L1 Instruction 32 KiB (x4)
   L2 Unified 1280 KiB (x4)
   L3 Unified 12288 KiB (x1)
-Load Average: 3.28, 1.51, 0.91
+Load Average: 3.38, 1.78, 1.13
 name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
-"BM_SortInsertion/100",71825,0.00723197,0.00701012,ms,,,,,
-"BM_SortInsertion/1000",848,0.738293,0.714807,ms,,,,,
-"BM_SortInsertion/10000",4,307.789,295.868,ms,,,,,
-"BM_SortInsertion/50000",1,8305.4,8027.73,ms,,,,,
-"BM_SortInsertion/100000",1,37869.9,36692.8,ms,,,,,
-"BM_SortMerge/1000",15065,0.0527375,0.0505724,ms,,,,,
-"BM_SortMerge/10000",298,2.11981,2.03158,ms,,,,,
-"BM_SortMerge/100000",20,48.5109,46.4173,ms,,,,,
+"BM_SortInsertion/100",136764,0.00690923,0.00669317,ms,,,,,
+"BM_SortInsertion/1000",1283,0.6314,0.611335,ms,,,,,
+"BM_SortInsertion/10000",3,219.201,212.051,ms,,,,,
+"BM_SortInsertion/50000",1,7567.65,7317.21,ms,,,,,
+"BM_SortInsertion/100000",1,46909,45373.3,ms,,,,,
+"BM_SortMerge/100",100000,0.00548682,0.00536186,ms,,,,,
+"BM_SortMerge/1000",10217,0.0912667,0.0883581,ms,,,,,
+"BM_SortMerge/10000",309,2.3067,2.2321,ms,,,,,
+"BM_SortMerge/50000",50,19.0203,18.3988,ms,,,,,
+"BM_SortMerge/100000",15,45.0421,43.5324,ms,,,,,
