@@ -1,0 +1,1 @@
+/usr/bin/c++  -march=native -O3 -DNDEBUG CMakeFiles/basics.dir/test/sort.cpp.o CMakeFiles/basics.dir/src/sort.cpp.o -o basics  _deps/googlebenchmark-build/src/libbenchmark.a -lrt 
