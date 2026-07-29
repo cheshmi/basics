@@ -4,12 +4,18 @@ HW0
 ### Q&A
  At the very top of the README, add a clear title and answer the following questions (one brief paragraph per question):
 How did you implement the linked list? (no plot is needed)
+Insertion sort.
+
 How long does it take to sort the list across different input sizes? (Include a plot supporting this data).
+
+
 How did you optimize your code? How much faster is the improved version, and why? (Include a plot supporting this data).
+
+
 
 ### Assumptions
 * The course said it "cannot provide remote server access for this assignment" so I have remade the build.sh to a MacOS/Linux environment 
-* Assumes the dependencies are already installed (i.e. cmake)
+* Build assumes the dependencies are already installed (i.e. cmake, gcc, python3)
 
 
 

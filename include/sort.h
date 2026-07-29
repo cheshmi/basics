@@ -1,6 +1,5 @@
 #ifndef BASICS_SORT_H
 #define BASICS_SORT_H
-
 #include <vector>
 
 struct Node {

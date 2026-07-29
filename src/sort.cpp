@@ -97,7 +97,9 @@ void sort_merge(LinkedList& list) {
     }
 
     list.head = merged_head;
-
+    left_list.head = nullptr; // Avoid double deletion
+    right_list.head = nullptr; // Avoid double deletion
+    
     int new_size = 0; // Recalculate size
     Node* current = list.head;
     while (current != nullptr) {
