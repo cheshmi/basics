@@ -26,10 +26,6 @@ FetchContent_MakeAvailable(argparse)
 #        BUILD_BYPRODUCTS ${CMAKE_BINARY_DIR}/libpfm4/lib/libpfm.so
 #        )
 
-find_package(benchmark CONFIG REQUIRED)
-
-target_link_libraries(your_target PRIVATE benchmark::benchmark)
-
 include(FetchContent)
 FetchContent_Declare(
         googlebenchmark
