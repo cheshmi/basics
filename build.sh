@@ -28,4 +28,4 @@ mkdir -p build/logs
 python3 -m venv .venv
 source .venv/bin/activate
 pip install matplotlib
-python3 model/graph.py build/logs/sort_logs.csv
+python3 model/graph.py build/logs/sort_logs.csv plots
